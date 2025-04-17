@@ -110,8 +110,8 @@ def generate_html(file_name, videos, pdfs, others):
         }}
 
         .header {{
-            background: #05f09a;
-            color: green;
+            background: #ff0303;
+            color: red;
             padding: 20px;
             text-align: center;
             font-size: 24px;
@@ -127,7 +127,7 @@ def generate_html(file_name, videos, pdfs, others):
         }}
 
         .subheading a {{
-            color: #00000a;
+            color: #fafafc;
             text-decoration: none;
             font-weight: bold;
         }}
@@ -166,14 +166,14 @@ def generate_html(file_name, videos, pdfs, others):
             border: none;
             border-radius: 5px;
             font-size: 16px;
-            background: #990202;
+            background: #fcfafa;
             color: white;
             cursor: pointer;
             transition: background 0.3s ease;
         }}
 
         #url-input-container button:hover {{
-            background: #03fc9d;
+            background: #ad0000;
         }}
 
         .search-bar {{
@@ -186,7 +186,7 @@ def generate_html(file_name, videos, pdfs, others):
         .search-bar input {{
             width: 100%;
             padding: 10px;
-            border: 2px solid #007bff;
+            border: 2px solid #ad0000;
             border-radius: 5px;
             font-size: 16px;
         }}
@@ -261,7 +261,7 @@ def generate_html(file_name, videos, pdfs, others):
         }}
 
         .video-list a:hover, .pdf-list a:hover, .other-list a:hover {{
-            background: #00ff91;
+            background: #ff0011;
             color: white;
             transform: translateX(10px);
         }}
