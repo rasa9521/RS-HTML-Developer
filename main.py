@@ -186,7 +186,7 @@ def generate_html(file_name, videos, pdfs, others):
         .search-bar input {{
             width: 100%;
             padding: 10px;
-            border: 2px solid #ad0000;
+            border: 2px solid #080000;
             border-radius: 5px;
             font-size: 16px;
         }}
@@ -222,7 +222,7 @@ def generate_html(file_name, videos, pdfs, others):
         }}
 
         .tab:hover {{
-            background: #00ff91;
+            background: #ff0000;
             color: white;
             transform: translateY(-5px);
         }}
