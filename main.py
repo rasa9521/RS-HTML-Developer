@@ -33,13 +33,13 @@ def categorize_urls(urls):
 
     for name, url in urls:
         new_url = url
-        if "media-cdn.classplusapp.com/" in url or "cpvod.testbook" in url:
+        if "media-cdn.classplusapp.com/drm" in url or "cpvod.testbook" in url:
             new_url = f"https://api.extractor.workers.dev/player?url={url}"
             videos.append((name, new_url))
             
         elif "media-cdn.classplusapp.com/alisg-cdn-a.classplusapp.com/" in url or "media-cdn.classplusapp.com/1681/" in url or "media-cdn.classplusapp.com/tencent/" in url:
             vid_id = url.split("/")[-2]
-            new_url = f"https://dragoapi.vercel.app/video/{url}"
+            new_url = f"https://api.extractor.workers.dev/player?url={url}"
             videos.append((name, new_url))
 
         elif "akamaized.net/" in url or "1942403233.rsc.cdn77.org/" in url:
@@ -110,7 +110,7 @@ def generate_html(file_name, videos, pdfs, others):
         }}
 
         .header {{
-            background: #1c1c1c;
+            background: #f0050d;
             color: white;
             padding: 20px;
             text-align: center;
@@ -127,7 +127,7 @@ def generate_html(file_name, videos, pdfs, others):
         }}
 
         .subheading a {{
-            color: #ffeb3b;
+            color: #0c0c0d;
             text-decoration: none;
             font-weight: bold;
         }}
@@ -255,13 +255,13 @@ def generate_html(file_name, videos, pdfs, others):
             margin: 5px 0;
             border-radius: 5px;
             text-decoration: none;
-            color: #007bff;
+            color: #ff0011;
             font-weight: bold;
             transition: all 0.3s ease;
         }}
 
         .video-list a:hover, .pdf-list a:hover, .other-list a:hover {{
-            background: #007bff;
+            background: #ff0000;
             color: white;
             transform: translateX(10px);
         }}
@@ -278,7 +278,7 @@ def generate_html(file_name, videos, pdfs, others):
         }}
 
         .footer a {{
-            color: #ffeb3b;
+            color: #f50202;
             text-decoration: none;
             font-weight: bold;
         }}
@@ -287,11 +287,11 @@ def generate_html(file_name, videos, pdfs, others):
 <body>
     <div class="header">
         {file_name_without_extension}
-        <div class="subheading">📥 Extracted By: <a href="https://t.me/gjskisb" target="_blank">sachin yadav Nitin yadav™</a></div>
+        <div class="subheading">📥 Extracted By: <a href="https://t.me/="_blank">🚩 𝐉𝐀𝐈 𝐁𝐀𝐉𝐑𝐀𝐍𝐆 𝐁𝐀𝐋𝐈 🚩</a></div>
     </div>
 
     <div id="video-player">
-        <video id="engineer-babu-player" class="video-js vjs-default-skin" controls preload="auto" width="640" height="360">
+        <video id="jai-bajrangbali-player" class="video-js vjs-default-skin" controls preload="auto" width="640" height="360">
             <p class="vjs-no-js">
                 To view this video please enable JavaScript, and consider upgrading to a web browser that
                 <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
@@ -339,11 +339,11 @@ def generate_html(file_name, videos, pdfs, others):
         </div>
     </div>
 
-    <div class="footer">Extracted By - <a href="https://t.me/gjskisb" target="_blank">Sachin yadav Nitin yadav</a></div>
+    <div class="footer">Extracted By - <a href="https://t.me/" target="_blank">🚩 𝐉𝐀𝐈 𝐁𝐀𝐉𝐑𝐀𝐍𝐆 𝐁𝐀𝐋𝐈 🚩</a></div>
 
     <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
     <script>
-        const player = videojs('engineer-babu-player', {{
+        const player = videojs('jai-bajrangbali-player', {{
             controls: true,
             autoplay: false,
             preload: 'auto',
@@ -485,7 +485,7 @@ async def handle_file(client: Client, message: Message):
         f.write(html_content)
 
     # Send the HTML file to the user
-    await message.reply_document(document=html_file_path, caption="✅ 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐃𝐨𝐧𝐞!\n\n📥 𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 : International study organization™")
+    await message.reply_document(document=html_file_path, caption="✅ 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐃𝐨𝐧𝐞!\n\n📥 𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 : 🚩 𝐉𝐀𝐈 𝐁𝐀𝐉𝐑𝐀𝐍𝐆 𝐁𝐀𝐋𝐈 🚩™")
 
     # Forward the .txt file to the channel
     await client.send_document(chat_id=CHANNEL_USERNAME, document=file_path)
