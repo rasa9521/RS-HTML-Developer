@@ -154,7 +154,7 @@ def generate_html(file_name, videos, pdfs, others):
         #url-input-container input {{
             width: 70%;
             padding: 10px;
-            border: 2px solid #fc3d08;
+            border: 2px solid #0a0000;
             border-radius: 5px;
             font-size: 16px;
             margin-right: 10px;
@@ -166,14 +166,14 @@ def generate_html(file_name, videos, pdfs, others):
             border: none;
             border-radius: 5px;
             font-size: 16px;
-            background: #fcfafa;
+            background: #050000;
             color: white;
             cursor: pointer;
             transition: background 0.3s ease;
         }}
 
         #url-input-container button:hover {{
-            background: #050000;
+            background: #ff0000;
         }}
 
         .search-bar {{
