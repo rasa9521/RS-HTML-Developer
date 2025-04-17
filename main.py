@@ -122,7 +122,7 @@ def generate_html(file_name, videos, pdfs, others):
         .subheading {{
             font-size: 16px;
             margin-top: 10px;
-            color: #ccc;
+            color: #030000;
             font-weight: normal;
         }}
 
