@@ -110,8 +110,8 @@ def generate_html(file_name, videos, pdfs, others):
         }}
 
         .header {{
-            background: #f0050d;
-            color: white;
+            background: #05f09a;
+            color: green;
             padding: 20px;
             text-align: center;
             font-size: 24px;
@@ -127,7 +127,7 @@ def generate_html(file_name, videos, pdfs, others):
         }}
 
         .subheading a {{
-            color: #0c0c0d;
+            color: #00000a;
             text-decoration: none;
             font-weight: bold;
         }}
@@ -166,14 +166,14 @@ def generate_html(file_name, videos, pdfs, others):
             border: none;
             border-radius: 5px;
             font-size: 16px;
-            background: #007bff;
+            background: #990202;
             color: white;
             cursor: pointer;
             transition: background 0.3s ease;
         }}
 
         #url-input-container button:hover {{
-            background: #0056b3;
+            background: #03fc9d;
         }}
 
         .search-bar {{
@@ -222,7 +222,7 @@ def generate_html(file_name, videos, pdfs, others):
         }}
 
         .tab:hover {{
-            background: #007bff;
+            background: #00ff91;
             color: white;
             transform: translateY(-5px);
         }}
@@ -241,7 +241,7 @@ def generate_html(file_name, videos, pdfs, others):
         .content h2 {{
             font-size: 22px;
             margin-bottom: 15px;
-            color: #007bff;
+            color: #00ff91;
         }}
 
         .video-list, .pdf-list, .other-list {{
@@ -250,8 +250,8 @@ def generate_html(file_name, videos, pdfs, others):
 
         .video-list a, .pdf-list a, .other-list a {{
             display: block;
-            padding: 10px;
-            background: #f5f7fa;
+            padding: 20px;
+            background: #050505;
             margin: 5px 0;
             border-radius: 5px;
             text-decoration: none;
@@ -261,7 +261,7 @@ def generate_html(file_name, videos, pdfs, others):
         }}
 
         .video-list a:hover, .pdf-list a:hover, .other-list a:hover {{
-            background: #ff0000;
+            background: #00ff91;
             color: white;
             transform: translateX(10px);
         }}
