@@ -241,7 +241,7 @@ def generate_html(file_name, videos, pdfs, others):
         .content h2 {{
             font-size: 22px;
             margin-bottom: 15px;
-            color: #00ff91;
+            color: #ff0000;
         }}
 
         .video-list, .pdf-list, .other-list {{
